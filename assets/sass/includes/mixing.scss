@@ -1,0 +1,57 @@
+//---------------------------------//
+//----------flex box basic---------//
+@mixin  flexboxbasic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//---------------------------------//
+//----------flex box column---------//
+@mixin  flexboxcolumn {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+//---------------------------------//
+//------transition  3 seconds------//
+@mixin transitionbasic {
+    transition: all 0.3s ease;
+}
+
+@mixin transitionbasicslow {
+    transition: all 0.5s ease;
+}
+
+
+
+//---------------------------------//
+//----linear gradient standard-----//
+@mixin lineargradientbasic
+{
+    background: linear-gradient(145deg, rgba(#1F1F1F, 0.1) 0%, rgba(#636363,0.10) 100%);
+
+}
+
+@mixin lineargradienservices
+{
+    background: linear-gradient(145deg, rgba(#1F1F1F, 0.3) 0%, rgba(#636363,0.3) 100%);
+
+}
+
+
+@mixin lineargradienservicesmenu
+{
+    background: linear-gradient(145deg, rgba(#1F1F1F, 0.9) 0%, rgba($primary-plate,0.9) 100%);
+
+}
+
+@mixin  lineargradienmenu
+{
+background: linear-gradient(145deg, rgba($dark-golden,1) 0%, rgba($primary-golden,1) 100%);    
+}

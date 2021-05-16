@@ -1,0 +1,67 @@
+@import "includes/colors.scss";
+@import "includes/sizes.scss";
+@import "includes/mixing.scss";
+
+body{
+    background-color: $darnnes;
+}
+
+
+header{
+    @include lineargradientbasic;
+}
+
+
+.title-container{
+
+    margin:$big-small auto;
+
+    h1{
+    font-size: $big;
+    margin:$big-small auto;
+    color:$third-golden;
+    }
+
+}
+
+
+table{
+    @include flexboxcolumn;
+    width:50%;
+    border: solid $light-golden 3px;
+    border-radius: 6px;
+
+
+
+    tr{
+        width:300px;
+        height:$super-big;
+        border-top: solid $light-golden 1px;
+        border-bottom: solid $light-golden 1px;
+
+
+
+            th{
+                margin:$big-small auto;
+                padding:$small-medium;
+                font-size: $small-big;
+                color:$secundary-golden;
+            }
+
+        td{
+            padding:$small-medium;
+
+
+        }
+
+        .index{
+            color:$dark-golden;
+        }
+
+
+    }
+
+}
+
+
+
