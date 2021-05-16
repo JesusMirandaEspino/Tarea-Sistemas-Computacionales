@@ -2,16 +2,19 @@
 @import "includes/sizes.scss";
 @import "includes/mixing.scss";
 
+
+
+//TODO GENERALES
 body{
     background-color: $darnnes;
 }
 
-
+//Encabezado
 header{
-    @include lineargradientbasic;
+    @include lineargradienservices;
 }
 
-
+//Tabla
 .title-container{
 
     margin:$big-small auto;
@@ -30,6 +33,7 @@ table{
     width:50%;
     border: solid $light-golden 3px;
     border-radius: 6px;
+    margin-top: $super-big;
 
 
 
@@ -50,12 +54,15 @@ table{
 
         td{
             padding:$small-medium;
+            color:$light-plate-2;
+            font-size:$big-small;
 
 
         }
 
         .index{
             color:$dark-golden;
+            font-size: $small;
         }
 
 
@@ -65,3 +72,255 @@ table{
 
 
 
+
+
+//------------------------------------------//
+//------------------------------------------//
+//------------------------------------------//
+@media(max-width:320px)
+{
+
+.title-container{
+    margin:$small auto;
+        h1{
+        font-size: $medium;
+        margin:$small auto;
+        }
+
+}
+
+table{
+    width:95%;
+    border-radius: 6px;
+    margin-top: $medium;
+
+    tr{
+        width:200px;
+        height:$medium;
+
+            th{
+                margin:$notes auto;
+                padding:$notes;
+                font-size: $big-small;
+            }
+
+        td{
+            padding:$notes;
+            font-size:$notes;
+        }
+
+        .index{
+            font-size: $notes;
+        }
+    }
+
+}
+
+}
+
+
+
+
+
+
+
+//------------------------------------------//
+//------------------------------------------//
+//------------------------------------------//
+@media(min-width:321px) and (max-width:468px)
+{
+.title-container{
+
+    margin:$small auto;
+        h1{
+        font-size: $medium;
+        margin:$small auto;
+        }
+}
+
+table{
+    width:95%;
+    border-radius: 6px;
+    margin-top: $medium;
+
+
+
+    tr{
+        width:200px;
+        height:$medium;
+
+            th{
+                margin:$notes auto;
+                padding:$notes;
+                font-size: $big-small;
+            }
+
+        td{
+            padding:$notes;
+            font-size:$notes;
+        }
+
+        .index{
+            font-size: $notes;
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+//------------------------------------------//
+//------------------------------------------//
+//------------------------------------------//
+@media(min-width:469px) and (max-width:568px)
+{
+.title-container{
+    margin:$small auto;
+        h1{
+        font-size: $medium;
+        margin:$small auto;
+        }
+
+}
+
+table{
+    width:95%;
+    border-radius: 6px;
+    margin-top: $medium;
+
+    tr{
+        width:250px;
+        height:$medium;
+
+            th{
+                margin:$notes auto;
+                padding:$notes;
+                font-size: $big-small;
+            }
+
+        td{
+            padding:$notes;
+            font-size:$notes;
+        }
+
+        .index{
+            font-size: $notes;
+        }
+    }
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+//------------------------------------------//
+//------------------------------------------//
+//------------------------------------------//
+@media(min-width:569px) and (max-width:768px)
+{
+.title-container{
+    margin:$big-small auto;
+        h1{
+        font-size: $small-big;
+        margin:$big-small auto;
+        }
+}
+
+
+table{
+    width:95%;
+    border-radius: 6px;
+    margin-top: $small-big;
+
+    tr{
+        width:250px;
+        height:$small-big;
+
+            th{
+                margin:$small auto;
+                padding:$small;
+                font-size: $small-medium;
+            }
+
+        td{
+            padding:$small;
+            font-size:$small;
+        }
+
+        .index{
+            font-size: $small;
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------//
+//------------------------------------------//
+//------------------------------------------//
+@media(min-width:769px) and (max-width:1024px)
+{
+    .title-container{
+        margin:$big-small auto;
+
+        h1{
+        font-size: $big;
+        margin:$big-small auto;
+        }
+}
+
+
+table{
+    width:80%;
+    border-radius: 6px;
+    margin-top: $super-big;
+
+
+
+    tr{
+        width:300px;
+        height:$super-big;
+
+            th{
+                margin:$big-small auto;
+                padding:$small-medium;
+                font-size: $small-big;
+            }
+
+            td{
+                padding:$small-medium;
+                font-size:$big-small;
+            }
+
+        .index{
+            font-size: $small;
+        }
+    }
+
+}
+
+
+}
