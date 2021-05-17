@@ -7,6 +7,7 @@
 //TODO GENERALES
 body{
     background-color: $darnnes;
+    font-family: 'Roboto', sans-serif;
 }
 
 //Encabezado
@@ -27,6 +28,24 @@ header{
 
 }
 
+footer{
+
+    @include lineargradientbasic;
+    margin-top:$big-small;
+
+    h2{
+        margin:$notes auto;
+        font-size: $small;
+        color:$light-golden;
+    }
+
+    p{
+        margin-bottom:$notes;
+        font-size: $small;
+        color:$light-golden; 
+    }
+}
+
 
 table{
     @include flexboxcolumn;
@@ -36,14 +55,14 @@ table{
     margin-top: $super-big;
 
 
-
     tr{
-        width:300px;
+        width:400px;
         height:$super-big;
-        border-top: solid $light-golden 1px;
-        border-bottom: solid $light-golden 1px;
 
 
+            #orden{
+                text-align: left;
+            }
 
             th{
                 margin:$big-small auto;
@@ -56,13 +75,15 @@ table{
             padding:$small-medium;
             color:$light-plate-2;
             font-size:$big-small;
-
-
+            width:150px;
+            border-top: solid $light-golden 1px;
+            
         }
 
         .index{
             color:$dark-golden;
             font-size: $small;
+            text-align: left;
         }
 
 
@@ -107,6 +128,7 @@ table{
         td{
             padding:$notes;
             font-size:$notes;
+            width:75px;
         }
 
         .index{
@@ -146,7 +168,7 @@ table{
 
 
     tr{
-        width:200px;
+        width:225px;
         height:$medium;
 
             th{
@@ -158,6 +180,7 @@ table{
         td{
             padding:$notes;
             font-size:$notes;
+            width:75px;
         }
 
         .index{
@@ -207,6 +230,7 @@ table{
         td{
             padding:$notes;
             font-size:$notes;
+            width:90px;
         }
 
         .index{
@@ -246,7 +270,7 @@ table{
     margin-top: $small-big;
 
     tr{
-        width:250px;
+        width:275px;
         height:$small-big;
 
             th{
@@ -258,6 +282,7 @@ table{
         td{
             padding:$small;
             font-size:$small;
+            width:100px;
         }
 
         .index{
@@ -301,7 +326,7 @@ table{
 
 
     tr{
-        width:300px;
+        width:350px;
         height:$super-big;
 
             th{
@@ -313,6 +338,7 @@ table{
             td{
                 padding:$small-medium;
                 font-size:$big-small;
+                width:100px;
             }
 
         .index{
